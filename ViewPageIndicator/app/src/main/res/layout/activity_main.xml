@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="无限自动循环ViewPager + 指示器\n（原理:头尾各多加一条，viewPager.setCurrentItem(position,false)切换）" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPager1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.ink.viewpageindicator.IndicatorGroup
+            android:id="@+id/IndicatorGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="无限自动循环ViewPager + 指示器\n（原理:return Integer.MAX_VALUE）" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.ink.viewpageindicator.IndicatorGroup
+            android:id="@+id/IndicatorGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:selectColor="#090909"
+            app:defaultColor="#ffffff"
+            app:defaultRadius="10dp"
+            app:selectRadius="13dp"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="正常ViewPager + 指示器" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPager3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.ink.viewpageindicator.IndicatorGroup
+            android:id="@+id/IndicatorGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            app:selectColor="#090909"
+            app:defaultColor="#ffffff"
+            app:defaultRadius="5dp"
+            app:distance="10dp"
+            app:selectRadius="6dp"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

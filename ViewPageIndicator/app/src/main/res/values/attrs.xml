@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndicatorGroup">
+        <attr name="distance" format="dimension" />
+        <attr name="defaultRadius" format="dimension" />
+        <attr name="selectRadius" format="dimension" />
+        <attr name="selectColor" format="color" />
+        <attr name="defaultColor" format="color" />
+    </declare-styleable>
+</resources>
